@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.apache.org//DTD Mapper 3.0//EN"
+        "http://mybatis.apache.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.book.mapper.user.UserMapper">
+    <insert id="addUser" parameterType="com.book.entity.User">
+        insert into user(username,password,realname,gender,email,phone,company)
+        values(#{username},#{password},#{realname},#{gender},
+               #{email},#{phone},#{company})
+    </insert>
+</mapper>
+
+
+
+
+
+
+
